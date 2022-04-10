@@ -33,11 +33,11 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
-            <Route path="/About" component={About} />
-            <Route path="/Contact" component={Contact} />
-            <Route path="/Forum" component={Documents} />
-            <Route path="/Chat" component={Chat} />
-            <Route path="/Projects" component={Projects} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/Forum" component={Documents} />
+            <Route exact path="/Chat" component={Chat} />
+            <Route exact path="/Projects" component={Projects} />
           </Switch>
         </AnimatePresence>
       </Pages>
